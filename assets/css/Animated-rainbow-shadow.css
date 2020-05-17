@@ -1,0 +1,20 @@
+.shadow {
+  background: white;
+}
+
+.shadow:before, .shadow:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  background: linear-gradient(45deg,#fb0094,#0000ff,rgba(255,61,0,0.51),#ffff00,#ff0000,#fb0094,rgba(0,0,255,0.41),#00ff00,#ffff00,#ff0000);
+  background-size: 300%;
+  width: calc(100% + 4px);
+  height: calc(100%);
+  z-index: -1;
+  animation: animate 5s linear infinite;
+}
+
+.shadow:after {
+  filter: blur(5px);
+}
+
