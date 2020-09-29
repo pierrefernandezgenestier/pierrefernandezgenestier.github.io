@@ -46,3 +46,24 @@ a:hover {
   text-decoration: initial;
 }
 
+@media (min-width:576px) {
+  .scale-on-hover:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    box-shadow: none!important;
+  }
+}
+
+.shadow {
+  box-shadow: none!important;
+}
+
+.portfolio-block.projects-cards .card img {
+  box-shadow: none!important;
+}
+
+.portfolio-block.project .gallery .item img {
+  box-shadow: none!important;
+  transition: .4s;
+}
+
